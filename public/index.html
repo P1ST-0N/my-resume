@@ -2,42 +2,245 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <title>Resume</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <!--main container-->
+    <div class="main-container">
+      <!--Main content section-->
+      <div class="main-content-section">
+        <!--About me section-->
+        <div class="about-me-section">
+          <h2 class="about-me-profession">FRONT-END DEVELOPER</h2>
+          <h1 class="about-me-name">Mykola Andrus</h1>
+          <p class="about-me-description">
+            I am a Trainee Front End Developer looking for a full-time position.
+            My goal as a developer is to improve my knowledge and programming
+            skills. I learned HTML5, CSS3 and JavaScript. I continue my studies
+            and in the near future i will study React, Redax, NodeJS, MongoDB on
+            the course. After studying, i want to work as an Full Stack
+            Developer. I will learn, develop and work to become a good
+            specialist in your company.
+          </p>
+        </div>
+        <!--My work experience-->
+        <div class="my-work-experience">
+          <h3 class="main-content-title">Work Experience</h3>
+          <!---Company 3-->
+          <div class="my-work-experience-company-block">
+            <h4 class="my-work-experience-position">
+              Frontend Freelancer
+              <span class="my-work-experience-company"></span>
+            </h4>
+            <p class="my-work-period">
+              June 2022 - present
+              <span class="my-work-divider">|</span> Ukraine
+            </p>
+            <span class="about-me-description-skills">
+              Skills: HTML5/CSS3/SASS, GIT, JavaScript, React.js, Scrum, Agile
+            </span>
+            <ul class="my-work-experience-duties">
+              <li class="my-work-experience-duty">
+                I am currently a front-end developer. I develop websites and
+                desktop applications. Competencies: Semantic layout in full
+                accordance with the layout, and all the corresponding
+                functionality.
+              </li>
+            </ul>
+          </div>
+          <!---Company 2-->
+          <div class="my-work-experience-company-block">
+            <h4 class="my-work-experience-position">
+              Frontend Courses
+              <span class="my-work-experience-company"
+                >January 2022 - June 2022 | Ukraine</span
+              >
+            </h4>
+            <p class="my-work-period">
+              October 2020 - February 2022<span class="my-work-divider">|</span>
+              Kyiv, Ukraine | Remote
+            </p>
+            <ul class="my-work-experience-duties">
+              <li class="my-work-experience-duty">
+                I know such programming languages ​​as HTML, CSS, JavaScript and
+                jQuery, also studying React. Frameworks and Libraries.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!--My education-->
+        <div class="my-education-section">
+          <h3 class="main-content-title">Education</h3>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+          <h4 class="my-education-level">
+            Yuriy Fedkovych Chernivtsi National University
+          </h4>
+          <p class="my-education-period">eptember 2002 - June 2006 | Ukraine</p>
+        </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+        <!--My projects section-->
+        <div class="my-projects-section">
+          <h3 class="main-content-title">Personal Projects</h3>
+
+          <ol class="my-projects-list">
+            <li class="my-projects-item">
+              <span class="my-projects-text">Project link</span>
+              <a
+                target="_blank"
+                href="https://p1st-0n.github.io/react-hw-08-phonebook/"
+                class="my-projects-link"
+                >PHONEBOOK</a
+              ><br />
+              <span class="my-projects-text">Source code</span>
+              <a
+                target="_blank"
+                href="https://github.com/P1ST-0N/react-hw-08-phonebook"
+                class="my-projects-link"
+                >https://github.com/P1ST-0N/react-hw-08-phonebook</a
+              >
+
+              <br />
+              Everything you need to manage your contacts. The application will
+              help you quickly find the desired contact. Includes register and
+              login. <br />
+              <span class="my-projects-bracket">
+                [Material-UI,React-Redux,Redux-Toolkit,Redux-Persist,Async-Thunk,Axios]</span
+              >
+            </li>
+
+            <li class="my-projects-item">
+              <span class="my-projects-text">Project link</span>
+              <a
+                target="_blank"
+                href="https://p1st-0n.github.io/react-hooks-hw-04-image-finder/"
+                class="my-projects-link"
+                >PIXABAY GALLERY</a
+              ><br />
+              <span class="my-projects-text">Source code</span>
+              <a
+                target="_blank"
+                href="https://github.com/P1ST-0N/react-hooks-hw-04-image-finder"
+                class="my-projects-link"
+                >https://github.com/P1ST-0N/react-hooks-hw-04-image-finder</a
+              ><br />
+              Keyword image search app.
+              <br />
+              <span class="my-projects-bracket">
+                [CSS3, React.js, API, Axios]</span
+              >
+            </li>
+            <li class="my-projects-item">
+              <span class="my-projects-text">Project link</span>
+              <a
+                target="_blank"
+                href="https://p1st-0n.github.io/markup-hw-06"
+                class="my-projects-link"
+                >WEB-STUDIO</a
+              ><br />
+              <span class="my-projects-text">Source code</span>
+              <a
+                target="_blank"
+                href="https://github.com/P1ST-0N/markup-hw-06"
+                class="my-projects-link"
+                >https://github.com/P1ST-0N/markup-hw-06</a
+              >
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!--Sidebar section-->
+      <aside class="sidebar-section">
+        <img
+          width="330"
+          height="354"
+          left="40"
+          top="80"
+          src="img2.jpg"
+          alt="my photo"
+        />
+        <!--contacts section-->
+        <div class="contacts-section">
+          <h3 class="sidebar-title">Contacts</h3>
+          <div>
+            <a class="contacts-section-link" href="tel:+380990740841"
+              >+38 099 074 084 1</a
+            >
+          </div>
+          <div>
+            <a
+              class="contacts-section-link"
+              href="mailto:luckylionia@gmail.com"
+              >luckylionia@gmail.com</a
+            >
+          </div>
+          <div>
+            <a
+              class="contacts-section-link"
+              target="_blank"
+              href="https://github.com/P1ST-0N"
+              >https://github.com/P1ST-0N</a
+            >
+          </div>
+          <div>
+            <a
+              class="contacts-section-link"
+              target="_blank"
+              href="https://www.linkedin.com/in/mykola-andrus-9a7784214/"
+              >https://www.linkedin.com/in/mykola-andrus</a
+            >
+          </div>
+          <div>
+            <span class="contacts-section-text">Kiev, Ukraine</span>
+          </div>
+        </div>
+        <!--tech skills section-->
+        <div class="tech-skills-section">
+          <h3 class="sidebar-title">Tech skills</h3>
+          <ul class="tech-skills-list">
+            <li class="tech-skills-item">
+              <span class="tech-skills-item-text">HTML5/CSS3/SASS</span>
+            </li>
+            <li class="tech-skills-item">
+              <span class="tech-skills-item-text">GIT</span>
+            </li>
+            <li class="tech-skills-item">
+              <span class="tech-skills-item-text">Scrum</span>
+            </li>
+            <li class="tech-skills-item">
+              <span class="tech-skills-item-text">Agile</span>
+            </li>
+            <li class="tech-skills-item">
+              <span class="tech-skills-item-text">JavaScript</span>
+            </li>
+            <li class="tech-skills-item">
+              <span class="tech-skills-item-text">Parcel</span>
+            </li>
+            <li class="tech-skills-item">
+              <span class="tech-skills-item-text">Webpack</span>
+            </li>
+            <li class="tech-skills-item">
+              <span class="tech-skills-item-text">React.js</span>
+            </li>
+            <li class="tech-skills-item">
+              <span class="tech-skills-item-text">Redux</span>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
   </body>
 </html>
